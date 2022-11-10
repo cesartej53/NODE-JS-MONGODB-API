@@ -1,0 +1,28 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "David Ruiz",
+    "age": 22,
+    "email": "david@email.com"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/636b24f47f660a7855f72f3c HTTP/1.1
+
+###
+PUT  http://localhost:9000/api/users/636b231f7c7b93f43df63d29 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Cesar David",
+    "age": 22,
+    "email": "cesar@email.com"
+}
+
+###
+DELETE  http://localhost:9000/api/users/636b24f47f660a7855f72f3c HTTP/1.1
